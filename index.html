@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Homepage</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <!-- href attribute below doesn't have a target attribute and will open on '_self' by default aka. uses the 
+        current webpage or tab to display the webpage after it is clicked on. -->
+
+        <p>
+            <a href="https://www.theodinproject.com/about">click me</a>
+        </p>
+
+        <!-- The targetless hypertext reference (href) can also be written like below: --> 
+        <p>
+            <a href="https://www.theodinproject.com/about" target="_self">now-click-me</a>
+        </p>
+
+        <p>Now observe the behavior after click the below hyperlinks.</p>
+
+        <!-- href attribute below DOES have a target attribute and will open on rel="_blank" aka. opens a new tab or 
+            webpage to display the webpage after it is clicked on but should really include the 'noopener' or 
+            'noreferrer' rel blocks also shown below, just 'noreferrer' has noopener as well by default -->
+        <p><a href="https://www.theodinproject.com/about" target="_blank">click-more</a></p>
+
+        <p><a href="https://www.theodinproject.com/about" target="_blank" rel="noreferrer">click-one-more-time</a></p>
+    
+        <p>Now adding a relative link below to the about.html page</p>
+
+        <a href="./pages/about.html">About</a>
+
+        <p><img src="./images/dog.jpg"></p>
+        
+    </body>
+</html>
